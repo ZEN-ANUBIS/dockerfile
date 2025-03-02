@@ -2,16 +2,16 @@ FROM quay.io/ayanokojix2306/kojixsophia:latest
 
 
 # Clone the repository
-RUN git clone https://github.com/devibraah/BWM-XMD /home/suha
+RUN git clone https://github.com/devibraah/BWM-XMD /home/app
 
 # Change ownership of the directory to the 'node' user
-RUN chown -R node:node /home/suha
+RUN chown -R node:node /home/app
 
 # Switch to the 'node' user
 USER node
 
 # Set the working directory
-WORKDIR /home/suha
+WORKDIR /home/app
 
 
 # Install dependencies

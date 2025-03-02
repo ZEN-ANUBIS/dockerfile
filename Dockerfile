@@ -2,7 +2,7 @@ FROM quay.io/ayanokojix2306/kojixsophia:latest
 
 
 # Clone the repository
-RUN git clone https://github.com/devibraah/BWM-XMD/home/suha
+RUN git clone https://github.com/devibraah/BWM-XMD /home/suha
 
 # Change ownership of the directory to the 'node' user
 RUN chown -R node:node /home/suha

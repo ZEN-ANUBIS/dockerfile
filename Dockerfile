@@ -1,17 +1,18 @@
 FROM quay.io/ayanokojix2306/kojixsophia:latest
 
 
+
 # Clone the repository
-RUN git clone https://github.com/devibraah/BWM-XMD /home/app
+RUN git clone https://github.com/devibraah/BWM-XMD /anubis/app
 
 # Change ownership of the directory to the 'node' user
-RUN chown -R node:node /home/app
+RUN chown -R node:node /anubis/app
 
 # Switch to the 'node' user
 USER node
 
 # Set the working directory
-WORKDIR /home/app
+WORKDIR /anubis/app
 
 
 # Install dependencies

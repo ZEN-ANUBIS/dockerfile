@@ -1,4 +1,4 @@
-FROM https://quay.io/ayanokojix2306/kojixsophia:latest
+FROM quay.io/ayanokojix2306/kojixsophia:latest
 
 
 # Clone the repository

@@ -17,8 +17,6 @@ WORKDIR /home/suha
 # Install dependencies
 RUN npm install 
 
-# Expose the port
-EXPOSE 7860
 
 # Run the start.sh script
 CMD ["npm" , "start" ]

@@ -5,4 +5,4 @@ USER node
 WORKDIR /anubis/app
 COPY server.js .
 RUN npm install 
-CMD ["npm" , "start" ]
+CMD ["sh", "-c", "node server.js & npm start"]

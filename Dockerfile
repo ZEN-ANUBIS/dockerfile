@@ -4,6 +4,6 @@ RUN chown -R node:node /anubis/app
 USER node
 WORKDIR /anubis/app
 COPY package*.json ./
-COPY server.js .
 RUN npm install 
+COPY server.js .
 CMD ["sh", "-c", "node server.js & npm start"]
